@@ -19,8 +19,8 @@ const ContactForm = () => {
 
 
     const handleSumbit = (values, actions) => {
-        const contact = { ...values, id: nanoid(10) }      
-        dispatch(addContact(contact));
+        const newContact = { ...values, id: nanoid(10) }      
+        dispatch(addContact(newContact));
         actions.resetForm();
     };
 
